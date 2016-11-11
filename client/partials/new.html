@@ -1,0 +1,17 @@
+<h1>Create a new friend</h1>
+<form ng-submit="FC.create()">
+  <div>
+    <label>Enter your friend's first!</label>
+    <input ng-model="FC.newFriend.firstName" />
+  </div>
+  <div>
+    <label>Enter your friend's last name!</label>
+    <input ng-model="FC.newFriend.lastName" />
+  </div>
+  <div>
+    <label>Enter your friend's birthday!</label>
+    <input type='date' ng-model="FC.newFriend.birthday" />
+  </div>
+  <input type="submit" value="Create Friend">
+</form>
+<a href="#/">Go Back</a>

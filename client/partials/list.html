@@ -1,0 +1,17 @@
+<h1>Your Friends</h1>
+<button ng-click='FC.refresh()'>Refresh</button>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Show</th>
+    <th>Update</th>
+    <th>Delete</th>
+  </tr>
+  <tr ng-repeat='friend in FC.friends track by $index'>
+    <td>{{friend.firstName}} {{friend.lastName}}</td>
+    <td><a href="#/show/{{friend._id}}"><button>Show</button></a></td>
+    <td><a href="#/edit/{{friend._id}}"><button>Edit</button></a></td>
+    <td><button ng-click='FC.delete(friend._id)'>Delete</button></td>
+  </tr>
+</table>
+<a href="#/new">Add a new friend</a>

@@ -1,0 +1,19 @@
+<div ng-init='FC.getFriend()'>
+  <h1>Edit Friend</h1>
+  <form ng-submit=FC.update()>
+    <div>
+      <label>Edit your friend's first</label>
+      <input ng-model="FC.editFriend.firstName" placeholder="{{FC.friend.firstName}}">
+    </div>
+    <div>
+      <label>Edit your friend's last name</label>
+      <input ng-model="FC.editFriend.lastName" placeholder="{{FC.friend.lastName}}">
+    </div>
+    <div>
+      <label>Edit your friend's birthday</label>
+      <input type='date' ng-model="FC.editFriend.birthday">
+    </div>
+    <input type="submit" name="name" value="Edit Friend">
+  </form>
+</div>
+<a href="#/">Go Back</a>
